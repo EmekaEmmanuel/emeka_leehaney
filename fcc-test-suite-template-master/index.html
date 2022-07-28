@@ -4,38 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <title>Fork Me! FCC: Test Suite Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<<<<<<< HEAD
-  Hello World!
-  “Hello World, we are software developers!”
-=======
-<h1 id="title"> Form </h1>
-<P id="description">This is a form to know the number of people who will attend</P>
-<form action="" id="survey-form">
-  <input placeholder="Enter name" type="text" id="name" required>
-  <label id="name-label"><label/>
-  <input placeholder="Enter email"  type="email" id="email" required>
-  <label id="email-label"><label/>
-  <input placeholder="Enter number"  type="number" min="0" max= "100" id="number" required>
-  <label id="number-label"><label/>
-  <select id="dropdown">
-    <option>option1<option/>
-    <option>option2<option/>
-  </select>
-  <input name="attribute" type="radio" value="radio1">Radio1<br/>
-  <input value="radio2" name="attribute" type="radio">Radio2 <br/>
 
-  <input type="checkbox" value="attribute">Field1<br/>
-  <input type="checkbox" value="attribute">Field2<br/>
-  <input type="checkbox" value="attribute">Field3<br/>
-  <textarea ></textarea>
-  <button id="submit" type="submit">submit</button>
-</form>
->>>>>>> 3e85c5e95689f3bea7590e8d8e0a295583372702
+  <h1 id="title"> Form </h1>
+  <P id="description">This is a form to know the number of people who will attend</P>
+
+  <form id="survey-form">
+    <div class="mb-3">
+      <label id="name-label" for="Entername" class="form-label">Name</label>
+      <input placeholder="Entername" class="form-control" type="text" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label id="email-label" class="form-label" for="email">Email address</label>
+      <input placeholder="Enter email" class="form-control" type="email" id="email" required>
+    </div>
+    <!--get back-->
+    <div class="mb-3">
+      <label id="number-label">Enter number</label>
+      <input placeholder="Enter number" type="number" min="0" max="100" id="number" required>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Check1
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="checkone">
+        <label class="form-check-label" for="checkone">
+          Check 2
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="checktwo">
+        <label class="form-check-label" for="checktwo">
+          Check 3
+        </label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="radio2">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Radio 1
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
+          alue="radio1">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Radio 2
+        </label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" id="dropdown" href="#">option1</a></li>
+          <li><a class="dropdown-item" id="dropdown" href="#">option2</a></li>
+          <li><a class="dropdown-item" id="dropdown" href="#">option3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
   <!--
 
     Hello Camper!
@@ -48,6 +101,10 @@
     - The freeCodeCamp Team
 
     -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </body>
 
